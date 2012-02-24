@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="+global">
+      <Stats>
+        <TotalClasses>6</TotalClasses>
+        <ConcreteClasses>6</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>2</Ce>
+        <A>0</A>
+        <I>0.66666666666667</I>
+        <D>0.33333333333333</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Notifier/Mail/Sendmail.php">phpRack_Adapters_Notifier_Mail_Sendmail</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Notifier/Mail/Smtp.php">phpRack_Adapters_Notifier_Mail_Smtp</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>+core</Package>
+        <Package>Adapters</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Adapters\Cpu</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Adapters\Auth">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>2</Ce>
+        <A>0.25</A>
+        <I>1</I>
+        <D>0.25</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Auth/Array.php">phpRack_Adapters_Auth_Array</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Auth/File.php">phpRack_Adapters_Auth_File</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Auth/Plain.php">phpRack_Adapters_Auth_Plain</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Auth/Abstract.php">phpRack_Adapters_Auth_Abstract</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Adapters</Package>
+        <Package>Tests</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Adapters">
+      <Stats>
+        <TotalClasses>12</TotalClasses>
+        <ConcreteClasses>11</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>4</Ca>
+        <Ce>1</Ce>
+        <A>0.083333333333333</A>
+        <I>0.2</I>
+        <D>0.71666666666667</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Config.php">phpRack_Adapters_Config</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Config/Ini.php">phpRack_Adapters_Config_Ini</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/ConnectionMonitor.php">phpRack_Adapters_ConnectionMonitor</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Cpu.php">phpRack_Adapters_Cpu</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/File.php">phpRack_Adapters_File</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Notifier/Mail.php">phpRack_Adapters_Notifier_Mail</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Os.php">phpRack_Adapters_Os</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Pear.php">phpRack_Adapters_Pear</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Pear/Package.php">phpRack_Adapters_Pear_Package</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Shell/Command.php">phpRack_Adapters_Shell_Command</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Url.php">phpRack_Adapters_Url</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Notifier/Mail/Abstract.php">phpRack_Adapters_Notifier_Mail_Abstract</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>+core</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>+global</Package>
+        <Package>Adapters\Auth</Package>
+        <Package>Adapters\Cpu</Package>
+        <Package>Tests</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Adapters\Cpu">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0.25</A>
+        <I>1</I>
+        <D>0.25</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Cpu/Darwin.php">phpRack_Adapters_Cpu_Darwin</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Cpu/Linux.php">phpRack_Adapters_Cpu_Linux</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Cpu/Windows.php">phpRack_Adapters_Cpu_Windows</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Cpu/Abstract.php">phpRack_Adapters_Cpu_Abstract</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>+core</Package>
+        <Package>+global</Package>
+        <Package>+simplexml</Package>
+        <Package>Adapters</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="Adapters\Db">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>0.33333333333333</A>
+        <I>0.5</I>
+        <D>0.16666666666667</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Db/Mysql.php">phpRack_Adapters_Db_Mysql</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Db/Mysql/Result/Formatter.php">phpRack_Adapters_Db_Mysql_Result_Formatter</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Db/Abstract.php">phpRack_Adapters_Db_Abstract</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>+core</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Tests</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Adapters\Files">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Adapters/Files/DirectoryFilterIterator.php">phpRack_Adapters_Files_DirectoryFilterIterator</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>+spl</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Tests</Package>
+      </UsedBy>
+    </Package>
+    <Package name="Tests">
+      <Stats>
+        <TotalClasses>31</TotalClasses>
+        <ConcreteClasses>28</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>8</Ce>
+        <A>0.096774193548387</A>
+        <I>0.88888888888889</I>
+        <D>0.014336917562724</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Assertion.php">phpRack_Assertion</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package.php">phpRack_Package</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Cpu.php">phpRack_Package_Cpu</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Cpu/Performance.php">phpRack_Package_Cpu_Performance</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Db.php">phpRack_Package_Db</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Db/Mysql.php">phpRack_Package_Db_Mysql</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Disc.php">phpRack_Package_Disc</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Disc/File.php">phpRack_Package_Disc_File</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Disc/FreeSpace.php">phpRack_Package_Disc_FreeSpace</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Network.php">phpRack_Package_Network</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Network/Ports.php">phpRack_Package_Network_Ports</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Network/Url.php">phpRack_Package_Network_Url</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Php.php">phpRack_Package_Php</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Php/Extensions.php">phpRack_Package_Php_Extensions</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Php/Extensions/Fileinfo.php">phpRack_Package_Php_Extensions_Fileinfo</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Php/Pear.php">phpRack_Package_Php_Pear</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Php/Version.php">phpRack_Package_Php_Version</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Shell.php">phpRack_Package_Shell</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Package/Simple.php">phpRack_Package_Simple</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Result.php">phpRack_Result</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Runner.php">phpRack_Runner</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Runner/Auth.php">phpRack_Runner_Auth</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Runner/Auth/Result.php">phpRack_Runner_Auth_Result</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Runner/Logger.php">phpRack_Runner_Logger</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Suite/library/LogViewerTest.php">phpRack_Suite_LogViewerTest</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Suite/library/Php5/PhpinfoTest.php">phpRack_Suite_Php5_PhpinfoTest</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Suite/library/ServerHealth/TopProcessesTest.php">phpRack_Suite_ServerHealth_ProcessesTest</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/View.php">phpRack_View</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/www/www1/library/phpRack/Suite.php">PhpRack_Suite</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Suite/Test.php">PhpRack_Suite_Test</Class>
+        <Class sourceFile="/home/www/www1/library/phpRack/Test.php">phpRack_Test</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>+core</Package>
+        <Package>+dom</Package>
+        <Package>+fileinfo</Package>
+        <Package>+reflection</Package>
+        <Package>+spl</Package>
+        <Package>Adapters</Package>
+        <Package>Adapters\Db</Package>
+        <Package>Adapters\Files</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>Adapters\Auth</Package>
+      </UsedBy>
+    </Package>
+  </Packages>
+  <Cycles/>
+</PDepend>
